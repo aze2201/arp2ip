@@ -38,8 +38,9 @@ int main(int argc, char *argv[]) {
     if(argc != 3) {
         fprintf(stderr, "Usage: %s <interface> <MAC address>\n", argv[0]);
         exit(EXIT_FAILURE);
-    }
+}
 
+    
     // Use the first argument as the interface and the second as the target MAC.
     const char *interface = argv[1];
     const char *target_mac_str = argv[2];
